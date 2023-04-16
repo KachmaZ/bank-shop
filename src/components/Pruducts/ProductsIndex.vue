@@ -1,7 +1,11 @@
 <template>
   <div class="">
-    <h2 class="">Products Index</h2>
-    <ProductsCard v-for="item in items" :item="item" :key="item" />
+    <v-container class="">
+      <h2 class="">Products Index</h2>
+      <v-row class="" justify="center" justify-md="start">
+        <ProductsCard v-for="item in items" v-bind="item" :key="item.id" />
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -11,7 +15,37 @@ export default {
   name: "ProductsIndex",
   data: () => {
     return {
-      items: ["One", "Two", "Three"],
+      items: [
+        {
+          id: 1,
+          imgName: "1.jpg",
+          title: "«Рождение Венеры» Сандро Боттичелли",
+          currentPrice: "1000000",
+          currency: "$",
+        },
+        {
+          id: 2,
+          imgName: "2.jpg",
+          title: "«Тайная вечеря»  Леонардо да Винчи",
+          currentPrice: "1 000 000",
+          currency: "$",
+        },
+        {
+          id: 3,
+          imgName: "3.jpg",
+          title: "«Сотворение Адама» Микеланджело",
+          currentPrice: "3 000 000",
+          currency: "$",
+        },
+        {
+          id: 4,
+          imgName: "4.jpg",
+          title: "«Урок анатомии»  Рембрандт",
+          oldPrice: "6 000 000",
+          currentPrice: "5 000 000",
+          currency: "$",
+        },
+      ],
     };
   },
   components: {
