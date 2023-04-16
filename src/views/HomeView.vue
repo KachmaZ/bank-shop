@@ -1,15 +1,17 @@
 <template>
-  <hello-world />
+  <ProductsIndex />
 </template>
 
 <script>
-import HelloWorld from "../components/HelloWorld";
+// import HelloWorld from "../components/HelloWorld";
+import ProductsIndex from "@/components/Pruducts/ProductsIndex.vue";
 
 export default {
   name: "HomeView",
 
   components: {
-    HelloWorld,
+    // HelloWorld,
+    ProductsIndex,
   },
 };
 </script>
