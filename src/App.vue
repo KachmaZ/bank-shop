@@ -1,26 +1,26 @@
 <template>
-  <v-app>
-    <MainHeader />
-    <v-main>
-      <router-view />
-    </v-main>
-  </v-app>
+    <v-app>
+        <MainHeader />
+        <v-main>
+            <router-view />
+        </v-main>
+    </v-app>
 </template>
 
 <script>
-import MainHeader from "./components/MainHader.vue";
+import MainHeader from './components/MainHader.vue'
 
 export default {
-  name: "App",
+    name: 'App',
 
-  data: () => ({
-    //
-  }),
+    data: () => ({
+        //
+    }),
 
-  components: { MainHeader },
-};
+    components: { MainHeader },
+}
 </script>
 
 <style lang="scss">
-@import "~@/assets/scss/vendors/bootstrap-vue/index";
+// @import "~@/assets/scss/vendors/bootstrap-vue/index";
 </style>

@@ -1,17 +1,17 @@
 <template>
-  <ProductsIndex />
+    <ProductsIndex />
 </template>
 
 <script>
 // import HelloWorld from "../components/HelloWorld";
-import ProductsIndex from "@/components/Pruducts/ProductsIndex.vue";
+import ProductsIndex from '@/components/Pruducts/ProductsIndex.vue'
 
 export default {
-  name: "HomeView",
+    name: 'HomeView',
 
-  components: {
-    // HelloWorld,
-    ProductsIndex,
-  },
-};
+    components: {
+        // HelloWorld,
+        ProductsIndex,
+    },
+}
 </script>
