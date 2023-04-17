@@ -1,9 +1,11 @@
 <template>
-  <div class="">In Development</div>
+  <v-footer>
+
+  </v-footer>
 </template>
 
 <script>
 export default {
-  name: "InDev",
+  name: "MainFooter",
 };
 </script>
